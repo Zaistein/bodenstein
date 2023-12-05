@@ -1,0 +1,90 @@
+/* 
+    Load all images on page load to fix visual bugs.
+*/
+
+body:after {
+    position: absolute;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    z-index: -1;
+    content: url(/porto/Cut.png) url(/porto/CutBW.png) url(/porto/Mangapanel.jpg);
+}
+
+/* 
+    Background Color of page.
+*/
+body{
+    background-color: #e7e7e7;
+}
+
+.header-main{
+
+    width: 100%;
+    margin: 0px 200px 0px 0px;
+    font-size: 20px;
+    position: fixed;
+    text-align: right;
+}
+
+
+
+.porto{
+
+    width: 65%;
+    height: 700px;
+    margin: 200px auto 200px auto;
+    background-image: url(/porto/CutBW.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    transition: all ease-in-out 100ms;
+
+}
+
+.porto:hover{
+
+    background-image: url(/porto/Cut.png);
+
+}
+
+.Mail{
+
+    text-align: center;
+    margin: 0px 100px 20px 100px;
+    cursor: pointer;
+
+}
+
+.Links{
+    
+    text-align: center;
+    margin: 0px 100px 20px 100px;
+
+}
+
+
+
+.Hover_Link:hover{
+    
+    text-align: center;
+    cursor: pointer;
+    color: aquamarine;
+    
+
+}
+
+.fotos{
+
+    width: 65%;
+    height: 700px;
+    margin: 200px auto 200px auto;
+    background-image: url(/porto/Mangapanel.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    transition: all ease-in-out 100ms;
+
+}
