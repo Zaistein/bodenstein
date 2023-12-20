@@ -1,0 +1,152 @@
+.content{
+
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    flex-wrap: wrap;
+    width: 75vw;
+    margin-top: 10vh;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.project{
+
+    display: flex;
+    height: 70vh;
+    max-height: 50vh;
+
+}
+
+
+.picto{
+
+    min-height: 5vh;
+    min-width: 10vh;
+    height: 10vh;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    cursor: pointer;
+    border-color: #e7e7e7;
+    transition: 500ms ease-in-out;
+    border-style: solid;
+
+
+
+}
+
+.small-img{
+
+    position: relative;
+    height: 100%;
+    display: grid;
+    grid-template-rows: repeat(5, auto);
+    grid-auto-flow: column;
+    justify-content:space-between;
+
+}
+
+.picto:hover{
+
+    opacity: 0.2;
+    border-width: 20px;
+    border-style: solid;    
+    border-color: #e7e7e7;
+
+
+}
+
+.img-container .active{
+
+    position: relative;
+    height: 100%;
+    object-fit: contain;
+    grid-area: 1 / 1 / 2 / 2;
+    align-self: center;    
+
+}
+.img-container video{
+    
+    visibility: hidden;
+}
+
+.img-container{
+
+    display: grid;
+    grid-template-columns:  repeat(1, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    padding-left: 4vmin;
+    padding-right: 4vmin;
+
+}
+
+.text{
+    padding-top: 4rem;
+    justify-content: bottom;
+    padding-right: 4vmin;
+    margin-bottom: 15vh;
+}
+
+.title{
+
+    font-size: 3rem;
+    padding-bottom: 1.4rem;
+}
+
+.body{
+
+    text-align: justify;
+
+}
+
+#imageBox2{
+    visibility: hidden;
+}
+
+/* 
+    Full Image View.
+*/
+
+#FullImageView{
+
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.8);
+    position: fixed;
+    z-index: 10;
+    text-align: center;
+    
+}
+
+#FullImage{
+
+    padding: 50px;
+    max-width: 100vw;
+    max-height: 100vh;
+    margin: 0 auto;
+
+
+}
+
+#CloseButton{
+
+    display: block;
+    position: absolute;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    cursor: pointer;
+    position: fixed;
+
+
+
+}

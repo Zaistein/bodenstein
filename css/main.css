@@ -1,4 +1,17 @@
 /* 
+    Disable Selection
+*/
+
+body {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+/* 
     Load all images on page load to fix visual bugs.
 */
 
@@ -8,7 +21,7 @@ body:after {
     height: 0;
     overflow: hidden;
     z-index: -1;
-    content: url(/porto/Cut.png) url(/porto/CutBW.png) url(/porto/Mangapanel.jpg);
+    content: url(/img/sideshot/2.png) url(/img/sideshot/CutBW.png);
 }
 
 /* 
@@ -16,64 +29,90 @@ body:after {
 */
 body{
     background-color: #e7e7e7;
+
 }
-
-.header-main{
-
-    width: 100%;
-    margin: 0px 200px 0px 0px;
-    font-size: 20px;
-    position: fixed;
-    text-align: right;
-}
+/* 
+    Main container
+*/
 
 
+/* 
+    Primary Image
+*/
 
-.porto{
-
-    width: 65%;
-    height: 700px;
-    margin: 200px auto 200px auto;
-    background-image: url(/porto/CutBW.png);
+.headshot{
+    
+    width: 35vmin;
+    height: 35vmin;
+    margin-top: 23vh;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url(/img/sideshot/2.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    position: relative;
-    transition: all ease-in-out 100ms;
+    visibility: hidden;
+    z-index: -5;
+    
+
 
 }
 
-.porto:hover{
+.headshot div{
+    background-image: url(/img/sideshot/CutBW.png);
+    opacity: 0;
+    width: 35vmin;
+    height: 35vmin;
+    margin-top: 23vh;
+    margin-left: auto;
+    margin-right: auto;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: 1s opacity ease-in-out;
+    z-index: 1;
 
-    background-image: url(/porto/Cut.png);
+
 
 }
 
-.Mail{
+.headshot div:hover{
+    opacity: 1;
+    z-index: 1;
 
-    text-align: center;
-    margin: 0px 100px 20px 100px;
-    cursor: pointer;
 
 }
+
+
+/* 
+    Links
+*/
 
 .Links{
-    
-    text-align: center;
-    margin: 0px 100px 20px 100px;
 
+    display: flex;
+    justify-content: center;
+    margin: 6vmin auto 0;
+    z-index: 2;
 }
 
 
 
+.Hover_Link{
+    margin: 0 0.4vmin;
+    z-index: 2;
+
+}
 .Hover_Link:hover{
     
-    text-align: center;
     cursor: pointer;
-    color: aquamarine;
-    
+    text-decoration: underline;
 
 }
+
+/* 
+    Image
+*/
 
 .fotos{
 
@@ -85,6 +124,46 @@ body{
     background-repeat: no-repeat;
     background-position: center;
     position: relative;
-    transition: all ease-in-out 100ms;
+
+}
+
+/* 
+    Mail Link
+*/
+
+.copy-link{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1vmin;
+    z-index: 2;
+
+
+}
+
+
+.copy-link-input{
+    display: none;
+    z-index: 2;
+}
+.copy-link-button{
+    z-index: 2;
+
+}
+
+.copy-link-button:hover{
+
+    cursor: pointer;
+    z-index: 2;
+}
+
+main{
+
+    display: flex;
+    position: absolute;
+    transform: translateY(-30vh);
+    z-index: 0;
+    height: 100vh;
 
 }

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport:" content="width=device-width, initial-scale=1.0">
+    <title>bodenstein</title>
+    <link rel="icon" href="/img/favicon/favicon.ico" type="image/icon">
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/projectpage.css">
+    <link rel="stylesheet" href="/css/home.css">
+    <script src="/js/switchImg.js" defer></script>
+    <script src="/js/fullscreen.js" defer></script>
+
+
+
+</head>
+
+
+<body>
+
+
+
+
+    <!-- Image Gallery -->
+    <div class="content">
+        <div class="project">  
+            <div class="small-img">
+                <img class="picto" src="/img/projects/Masterentwurf/0.jpg" alt="" onclick="switchImg(this)">
+                <img class="picto" src="/img/projects/Masterentwurf/1.jpg" alt="" onclick="switchImg(this)">
+                <img class="picto" src="/img/projects/Masterentwurf/2.jpg" alt="" onclick="switchImg(this)">
+                <img class="picto" src="/img/projects/Masterentwurf/3.jpg" alt="" onclick="switchImg(this)">
+                <img class="picto" src="/img/projects/Masterentwurf/4.jpg" alt="" onclick="switchImg(this)">
+                <img class="picto" src="/img/projects/Masterentwurf/5.jpg" alt="" onclick="switchImg(this)">
+
+
+            </div>
+            <div class="img-container">
+                <img class="active" id="imageBox" src="/img/projects/Masterentwurf/0.jpg" ng-if="option=='image'" onclick="FullView(this.src)"> 
+                <video class="active" id="vidBox" controls onclick="FullView(this.src)"> <source src="" type="video/mp4" ng-if="option=='video'"></video>
+            </div> 
+        </div>
+
+        <!-- Title -->
+        <div class="text">
+            <h1 class="title">
+                Masterentwurf
+            </h1>
+                    
+            <!-- Explanation Text -->
+            <p class="body">
+                Der ehemalige Handelshafen in Magdeburg ist momentan nur noch ein Schatten seiner selbst. Einstmalig war er einer der größten Umschlagplätze von Waren wie Salz, Zucker und Weizen. Nun liegen die Anlagen still und nur noch Relikte aus alten Zeiten sind übrig geblieben. Besonders die zwei Reichseinheitsspeicher, die früher einmal Herzstück der Anlage waren, erinnern an die imposanten Mengen und Dimensionen, die hier täglich gehandelt und bewegt wurden. Heute ist der Handelshafen in den Wissenschaftshafen umgewidmet, jedoch ist bisher nicht viel von dieser Widmung spürbar, immer noch dominieren ungenutzte Freiflächen und leere Gebäude das Areal. Wie kann der Wissenschaftshafen also wieder die ehemalige Kraft entwickeln, die mit der Zeit verloren gegangen ist? Eine Antwort auf diese Frage stellen  die noch vorhandenen Verkehrslinien dar, die das gesamte Gebiet begleiten. Zum einen die Wasserwege, die Elbe und das Hafenbecken auf Ost und Westseite, die qualitative Räume bieten. Zum anderen die Straßen und Wege, die das Erleben und das Schlendern am Wasser ermöglichen, sowie die Erreichbarkeit sowohl mit Rad als auch mit PKW ermöglichen. Und zu guter Letzt die alten Schienenanlagen, die sich wie zwei Schlangen von Norden über die Hubbrücke auf die Halbinsel legen. In diesen Linien liegen ungenutzte Versorgungsadern, die neues Blut und somit neues Leben in das Gebiet bringen können. Ziel ist es also, die Stärken und Potenziale dieser Adern anzuzapfen und auszuschöpfen. Wo früher primär Schuttgut umgeschlagen würde, soll heute ein Generator entstehen, ein Generator der Neues produziert, angefangen von Innovationen bis hin zu Kultur und Kunst. Kern dieses Areals soll die neue Akademie der Künste sein, die sich in ein produktives Umfeld einsetzt und so einen Pol und Identität für den Ort schafft. Der industrielle Charakter des Gebietes soll erhalten bleiben, eine direkte Anbindung zur Stadt besteht auf dem Fußweg nicht, so wird die Akademie zu einem Anziehungsort, der einlädt zu ihm zu reisen, ob mit Bus, Bahn, Auto oder Rad. Die Halbinsel wird also mit dem Erweitern der vorhandenen Verkehrslinien mit dem Rest der Stadt verbunden. Gerade der Charakter des ehemaligen Hafengebietes im Gegensatz zu der Kunstakademie stellt eine interessante Spannung dar, die es zu stärken gilt. Die neue Akademie eignet sich die zwei leerstehenden Silos an und spannt mit einem Neubau einen Raum auf, der Platz und Freiheit für das künstlerische Schaffen bietet.
+
+            </p> 
+        </div>
+    </div>
+    
+
+    <!-- Fullscreen --> 
+
+    <div id="FullImageView">
+        <img id="FullImage">
+        <span id="CloseButton" onclick="CloseFullView()"></span>
+    </div>
+ 
+
+
+    <!-- Mail Copy Button --> 
+
+    <div class="Home">
+        <button class="Home">
+            <a href="/html/projects.html" class="hidden">&#9750; </a>
+            <a href="/html/projects.html" class="shown">&#9751; </a>
+        </button>
+    </div>
+    
+</body>
+</html>
