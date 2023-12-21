@@ -21,7 +21,7 @@ body:after {
     height: 0;
     overflow: hidden;
     z-index: -1;
-    content: url(/img/sideshot/2.png) url(/img/sideshot/CutBW.png);
+    content: url() url();
 }
 
 /* 
@@ -35,46 +35,12 @@ body{
     Main container
 */
 
-
-/* 
-    Primary Image
-*/
-
-.headshot{
-    
-    width: 35vmin;
-    height: 35vmin;
-    margin-top: 23vh;
-    margin-left: auto;
-    margin-right: auto;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    visibility: hidden;
-    z-index: -5;
-    
-
-
+.main{
+    position: absolute;
+    margin: auto;
+    margin-top: 63vh;
+    width: 100%;
 }
-
-.headshot div{
-    opacity: 0;
-    width: 35vmin;
-    height: 35vmin;
-    margin-top: 23vh;
-    margin-left: auto;
-    margin-right: auto;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    transition: 1s opacity ease-in-out;
-    z-index: 1;
-
-
-
-}
-
-
 
 /* 
     Links
@@ -86,6 +52,7 @@ body{
     justify-content: center;
     margin: 6vmin auto 0;
     z-index: 2;
+    width: 100%;
 }
 
 
@@ -106,6 +73,7 @@ body{
 /* 
     Mail Link
 */
+
 
 .copy-link{
 
@@ -134,12 +102,17 @@ body{
     z-index: 2;
 }
 
+/* 
+    THREE.js
+*/
+
 main{
 
-    display: flex;
     position: absolute;
-    transform: translateY(-30vh);
     z-index: 0;
     height: 100vh;
+    width: 100vw;
+    margin: auto;
+    transform: translateY(-6vh);
 
 }
