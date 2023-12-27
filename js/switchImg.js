@@ -7,7 +7,7 @@ function switchImg(smallImg){
     img.style.visibility = 'visible';
     
     var vid = document.getElementById("vidBox");    
-    vid.style.visibility = 'hidden';
+    vid.style.visibility = 'collapse';
     
     var fullImg = document.getElementById("imageBox");
     fullImg.src = smallImg.src;
@@ -25,7 +25,7 @@ function switchVid(smallImg){
     vid.style.visibility = 'visible';
 
     var img = document.getElementById("imageBox");
-    img.style.visibility = 'hidden';
+    img.style.visibility = 'collapse';
 
     var fullImg = document.getElementById("vidBox");
     fullImg.src = smallImg.src;

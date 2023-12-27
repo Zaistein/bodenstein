@@ -59,24 +59,18 @@
 .img-container .active{
 
     position: relative;
-    height: 100%;
     object-fit: contain;
-    grid-area: 1 / 1 / 2 / 2;
-    align-self: center;    
+    width: 100%;
+    height: 100%;
+
 
 }
-.img-container video{
-    
-    visibility: hidden;
-}
+
+
 
 .img-container{
-
-    display: grid;
-    grid-template-columns:  repeat(1, 1fr);
-    grid-template-rows: 1fr;
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
+    
+    display: flex;
     position: relative;
     height: 100%;
     width: 100%;
@@ -108,8 +102,8 @@
 
 }
 
-#imageBox2{
-    visibility: hidden;
+#vidBox{
+    visibility: collapse;
 }
 
 /* 
