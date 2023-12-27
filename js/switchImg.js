@@ -4,10 +4,10 @@
 function switchImg(smallImg){
 
     var img = document.getElementById("imageBox");    
-    img.style.visibility = 'visible';
+    img.style.display = 'block';
     
     var vid = document.getElementById("vidBox");    
-    vid.style.visibility = 'collapse';
+    vid.style.display = 'none';
     
     var fullImg = document.getElementById("imageBox");
     fullImg.src = smallImg.src;
@@ -22,10 +22,10 @@ function switchImg(smallImg){
 function switchVid(smallImg){
 
     var vid = document.getElementById("vidBox");
-    vid.style.visibility = 'visible';
+    vid.style.display = 'block';
 
     var img = document.getElementById("imageBox");
-    img.style.visibility = 'collapse';
+    img.style.display = 'none';
 
     var fullImg = document.getElementById("vidBox");
     fullImg.src = smallImg.src;
