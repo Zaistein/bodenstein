@@ -52,7 +52,7 @@ li{
     border: none;
     font-size: 1rem;
     z-index: 1;
-    height: 100%;
+    height: 100vh;
     width: 50%;
     top: 50%;
     transform: translateY(-50%);
@@ -104,17 +104,23 @@ li{
     position: fixed;
     margin: 5vh 50%;
     bottom: 0;
+    z-index: 99;
+
     
 }
+
 
 .Home .shown {
     opacity: 0;
     transition-duration: .3s;
+    z-index: 99;
 }
 .Home:hover .hidden {
     opacity: 0;
     transition-duration: .3s;
     cursor: pointer;
+    z-index: 99;
+
 
 }
 
@@ -122,11 +128,15 @@ li{
     opacity: 1;
     transition-duration: .3s;
     cursor: pointer;
+    z-index: 99;
+
 }
 
 .shown,
 .hidden {
     position: absolute;
+    z-index: 99;
+
 }
 
 /* 
