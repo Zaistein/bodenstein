@@ -10,6 +10,7 @@ const scene = new THREE.Scene();
 //create a new camera with positions and angles
 const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
 
+
 //Keep track of the mouse position, so we can make the test move
 let mouseX = window.innerWidth / 2;
 let mouseY = window.innerHeight / 2;
@@ -25,6 +26,8 @@ let objToRender = 'test';
 
 //Instantiate a loader for the .gltf file
 const loader = new GLTFLoader();
+
+
 
 //Load the file
 loader.load(
@@ -43,6 +46,7 @@ loader.load(
     console.error(error);
   }
 );
+
 
 //Instantiate a new renderer and set its size
 const renderer = new THREE.WebGLRenderer({ alpha: true }); //Alpha: true allows for the transparent background
@@ -68,8 +72,10 @@ scene.add(ambientLight);
 
 //This adds controls to the camera, so we can rotate / zoom it with the mouse
 if (objToRender === "test") {
-  //controls = new OrbitControls(camera, renderer.domElement);
+    controls = new OrbitControls(camera, renderer.domElement);
+    
 }
+
 
 //Render the scene
 function animate() {
@@ -79,8 +85,8 @@ function animate() {
   //Move by mouse movement
   if (object && objToRender === "test") {
     //I've played with the constants here until it looked good 
-    object.rotation.y = -4 + mouseX / window.innerWidth * 8;
-    object.rotation.x = -4 + mouseY * 8 / window.innerHeight;
+    //object.rotation.y = -4 + mouseX / window.innerWidth * 8;
+    //object.rotation.x = -4 + mouseY * 8 / window.innerHeight;
   }
   renderer.render(scene, camera);
 }
@@ -97,6 +103,8 @@ document.onmousemove = (e) => {
   mouseX = e.clientX;
   mouseY = e.clientY;
 }
+
+
 
 //Start the 3D rendering
 animate();
