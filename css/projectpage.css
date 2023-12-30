@@ -47,7 +47,7 @@
     grid-template-rows: repeat(5, auto);
     grid-auto-flow: column;
     justify-content:space-between;
-
+    
 }
 
 .picto:hover{
