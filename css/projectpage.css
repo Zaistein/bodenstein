@@ -1,13 +1,13 @@
 .content{
 
     display: flex;
-    align-items: center;
     justify-content: left;
     flex-wrap: wrap;
     width: 75vw;
     margin-top: 10vh;
     margin-left: auto;
     margin-right: auto;
+    flex-direction: column;
 }
 
 .project{
@@ -15,6 +15,10 @@
     display: flex;
     height: 70vh;
     max-height: 50vh;
+    justify-content: flex-start;
+    flex-direction: row;
+
+
 
 }
 
@@ -57,10 +61,12 @@
 }
 
 .img-container .active{
+
     position: relative;
     object-fit: contain;
     width: 100%;
     height: 100%;
+
 }
 
 
@@ -70,9 +76,9 @@
     display: flex;
     position: relative;
     height: 100%;
-    width: 100%;
     padding-left: 4vmin;
     padding-right: 4vmin;
+
 
 }
 
