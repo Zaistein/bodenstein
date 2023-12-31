@@ -151,3 +151,12 @@
 
 
 }
+
+/* media query for mobile devices */
+@media only screen and (max-width: 1000px)
+{
+    .Home a
+    {
+      font-size: 3rem;
+    }
+  }

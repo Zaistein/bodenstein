@@ -96,6 +96,17 @@ li{
     Home Button
 */
 
+/* media query for mobile devices */
+@media only screen and (max-width: 1000px)
+{
+    .Home
+    {
+      font-size: 3rem;
+    }
+    
+  }
+
+
 .Home{
 
     display: flex;
