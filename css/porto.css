@@ -97,7 +97,7 @@ li{
 */
 
 /* media query for mobile devices */
-@media (max-width: 1000px)
+@media screen and (max-width: 1500px)
 {
     .Home
     {
