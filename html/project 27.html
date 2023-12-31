@@ -28,20 +28,15 @@
                 <img class="picto" src="/Project 27/1.jpg" alt="" onclick="switchImg(this)">
                 <img class="picto" src="/Project 27/2.jpg" alt="" onclick="switchImg(this)">
                 <img class="picto" src="/Project 27/3.jpg" alt="" onclick="switchImg(this)">
-                <img class="picto" src="/Project 27/4.jpg" alt="" onclick="switchImg(this)">
-                <img class="picto" src="/Project 27/5.jpg" alt="" onclick="switchImg(this)">
-                <img class="picto" src="/Project 27/6.jpg" alt="" onclick="switchImg(this)">
-                <img class="picto" src="/Project 27/7.jpg" alt="" onclick="switchImg(this)">
-                <img class="picto" src="/Project 27/8.jpg" alt="" onclick="switchImg(this)">
-                <img class="picto" src="/Project 27/9.jpg" alt="" onclick="switchImg(this)">
-                <img class="picto" src="/Project 27/10.jpg" alt="" onclick="switchImg(this)">
+                <video class="picto" src="/Project 27/4.mp4" onclick="switchVid(this)"></video>
+
 
 
 
             </div>
             <div class="img-container">
                 <img class="active" id="imageBox" src="/Project 27/1.jpg" ng-if="option=='image'" onclick="FullView(this.src)"> 
-                <video class="active" id="vidBox" controls onclick="FullView(this.src)"> <source src="" type="video/mp4" ng-if="option=='video'"></video>
+                <video class="active" id="vidBox" controls muted> <source src="" type="video/mp4" ng-if="option=='video'"></video>
             </div> 
         </div>
 
@@ -55,7 +50,7 @@
                     
             <!-- Explanation Text -->
             <p class="body">
-                -
+                Raum zu Nils Frahm_#2
             </p> 
         </div>
     </div>

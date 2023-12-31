@@ -25,22 +25,19 @@
     <div class="content">
         <div class="project">  
             <div class="small-img">
+                <img class="picto" src="/Project 26/6.jpg" alt="" onclick="switchImg(this)">
                 <img class="picto" src="/Project 26/1.jpg" alt="" onclick="switchImg(this)">
                 <img class="picto" src="/Project 26/2.jpg" alt="" onclick="switchImg(this)">
                 <img class="picto" src="/Project 26/3.jpg" alt="" onclick="switchImg(this)">
                 <img class="picto" src="/Project 26/4.jpg" alt="" onclick="switchImg(this)">
                 <img class="picto" src="/Project 26/5.jpg" alt="" onclick="switchImg(this)">
-                <img class="picto" src="/Project 26/6.jpg" alt="" onclick="switchImg(this)">
-                <img class="picto" src="/Project 26/7.jpg" alt="" onclick="switchImg(this)">
-                <img class="picto" src="/Project 26/8.jpg" alt="" onclick="switchImg(this)">
-                <img class="picto" src="/Project 26/9.jpg" alt="" onclick="switchImg(this)">
-                <img class="picto" src="/Project 26/10.jpg" alt="" onclick="switchImg(this)">
+
 
 
 
             </div>
             <div class="img-container">
-                <img class="active" id="imageBox" src="/Project 26/1.jpg" ng-if="option=='image'" onclick="FullView(this.src)"> 
+                <img class="active" id="imageBox" src="/Project 26/6.jpg" ng-if="option=='image'" onclick="FullView(this.src)"> 
                 <video class="active" id="vidBox" controls onclick="FullView(this.src)"> <source src="" type="video/mp4" ng-if="option=='video'"></video>
             </div> 
         </div>
@@ -55,48 +52,53 @@
                     
             <!-- Explanation Text -->
             <p class="body">
-                Der ehemalige Handelshafen in Magdeburg ist momentan
-nur noch ein Schatten seiner selbst. Einstmalig war er einer
-der größten Umschlagplätze von Waren wie Salz, Zucker und
-Weizen. Nun liegen die Anlagen still und nur noch Relikte aus al-
-ten Zeiten sind übrig geblieben. Besonders die zwei Reichsein-
-heitsspeicher, die früher einmal Herzstück der Anlage waren,
-erinnern an die imposanten Mengen und Dimensionen, die
-hier täglich gehandelt und bewegt wurden. Heute ist der Han-
-delshafen in den Wissenschaftshafen umgewidmet, jedoch
-ist bisher nicht viel von dieser Widmung spürbar, immer noch
-dominieren ungenutzte Freiflächen und leere Gebäude das Ar-
-eal. Wie kann der Wissenschaftshafen also wieder die ehema-
-lige Kraft entwickeln, die mit der Zeit verloren gegangen ist?
-Eine Antwort auf diese Frage stellen die noch vorhandenen
-Verkehrslinien dar, die das gesamte Gebiet begleiten. Zum ei-
-nen die Wasserwege, die Elbe und das Hafenbecken auf Ost
-und Westseite, die qualitative Räume bieten. Zum anderen die
-Straßen und Wege, die das Erleben und das Schlendern am
-Wasser ermöglichen, sowie die Erreichbarkeit sowohl mit Rad
-als auch mit PKW ermöglichen. Und zu guter Letzt die alten
-Schienenanlagen, die sich wie zwei Schlangen von Norden über
-die Hubbrücke auf die Halbinsel legen. In diesen Linien liegen
-ungenutzte Versorgungsadern, die neues Blut und somit neues
-Leben in das Gebiet bringen können. Ziel ist es also, die Stärken
-und Potenziale dieser Adern anzuzapfen und auszuschöpfen.
-Wo früher primär Schuttgut umgeschlagen würde, soll heute
-ein Generator entstehen, ein Generator der Neues produzi-
-ert, angefangen von Innovationen bis hin zu Kultur und Kunst.
-Kern dieses Areals soll die neue Akademie der Künste sein, die
-sich in ein produktives Umfeld einsetzt und so einen Pol und
-Identität für den Ort schafft. Der industrielle Charakter des Ge-
-bietes soll erhalten bleiben, eine direkte Anbindung zur Stadt
-besteht auf dem Fußweg nicht, so wird die Akademie zu einem
-Anziehungsort, der einlädt zu ihm zu reisen, ob mit Bus, Bahn,
-Auto oder Rad. Die Halbinsel wird also mit dem Erweitern der
-vorhandenen Verkehrslinien mit dem Rest der Stadt verbun-
-den. Gerade der Charakter des ehemaligen Hafengebietes im
-Gegensatz zu der Kunstakademie stellt eine interessante Span-
-nung dar, die es zu stärken gilt. Die neue Akademie eignet sich
-die zwei leerstehenden Silos an und spannt mit einem Neubau
-einen Raum auf, der Platz und Freiheit für das künstlerische
-Schaffen bietet.
+                Der ehemalige Handelshafen in Magdeburg ist momentan nur noch ein Schatten seiner selbst. Einstmalig war er
+einer der größten Umschlagplätze von Waren wie Salz, Zucker und Weizen. Nun liegen die Anlagen still und nur
+noch Relikte aus alten Zeiten sind übrig geblieben. Besonders die zwei Reichseinheitsspeicher, die früher einmal
+Herzstück der Anlage waren, erinnern an die imposanten Mengen und Dimensionen, die hier täglich gehandelt und
+bewegt wurden. Heute ist der Handelshafen in den Wissenschaftshafen umgewidmet, jedoch ist bisher nicht viel
+von dieser Widmung spürbar, immer noch dominieren ungenutzte Freiflächen und leere Gebäude das Areal. Wie
+kann der Wissenschaftshafen also wieder die ehemalige Kraft entwickeln, die mit der Zeit verloren gegangen ist?
+<br>
+<br>
+Eine Antwort auf diese Frage stellen die noch vorhandenen Verkehrslinien dar, die das gesamte Gebi-
+et begleiten. Zum einen die Wasserwege, die Elbe und das Hafenbecken auf Ost und Westseite, die quali-
+tative Räume bieten. Zum anderen die Straßen und Wege, die das Erleben und das Schlendern am Wass-
+er ermöglichen, sowie die Erreichbarkeit sowohl mit Rad als auch mit PKW ermöglichen. Und zu guter
+Letzt die alten Schienenanlagen, die sich wie zwei Schlangen von Norden über die Hubbrücke auf die
+Halbinsel legen. In diesen Linien liegen ungenutzte Versorgungsadern, die neues Blut und somit neu-
+es Leben in das Gebiet bringen können. Ziel ist es also, die Stärken und Potenziale dieser Adern anzuzap-
+fen und auszuschöpfen. Wo früher primär Schuttgut umgeschlagen würde, soll heute ein Generator ent-
+stehen, ein Generator der Neues produziert, angefangen von Innovationen bis hin zu Kultur und Kunst.
+<br>
+<br>
+Kern dieses Areals soll die neue Akademie der Künste sein, die sich in ein produktives Umfeld einsetzt und so
+einen Pol und Identität für den Ort schafft. Der industrielle Charakter des Gebietes soll erhalten bleiben, eine
+direkte Anbindung zur Stadt besteht auf dem Fußweg nicht, so wird die Akademie zu einem Anziehungsort,
+der einlädt zu ihm zu reisen, ob mit Bus, Bahn, Auto oder Rad. Die Halbinsel wird also mit dem Erweitern
+der vorhandenen Verkehrslinien mit dem Rest der Stadt verbunden. Gerade der Charakter des ehemaligen
+Hafengebietes im Gegensatz zu der Kunstakademie stellt eine interessante Spannung dar, die es zu stärken
+gilt. Die neue Akademie eignet sich die zwei leerstehenden Silos an und spannt mit einem Neubau einen
+Raum auf, der Platz und Freiheit für das künstlerische Schaffen bietet.
+<br><br>
+Silos sind immer Speicher von etwas. Ob es sich um Weizen, Zucker oder auch Salz handelt, es gilt das Innere
+vor äußeren Einflüssen zu schützen. Die beiden Silos werden zu dienenden Skulpturen, die gewisse Funk-
+tionen der Akademie in sich aufnehmen. Auf Seite des Hafenbeckens nimmt das Silo Verwaltung, Studios und
+die Bibliothek in sich auf. Die Struktur wird mit geringen Eingriffen aufgewertet und nutzbar gemacht. Das Silo
+auf Seite der Elbe hingegen bleibt als rohe Struktur erhalten, die als Kunstkörper Ausstellungen aufnehmen
+soll und Platz und Raum für experimentelles Arbeiten bietet.
+<br><br>
+Der Riegel, der sich in der Mitte der beiden Silos aufspannt, beinhaltet alle weiteren Nutzungen: Veran-
+staltungssaal, Bar/Kantine, Aufenthaltsbereiche, Tanzräume und einen Werkbereich. Hier wird Kunst und
+Kultur produziert. Im Süden ein eher extrovertierter Bau mit großzügigem Foyer, der sich im Verlauf Richtung
+Norden zu einem introvertierterem Bau wandelt. Der nördliche Teil ist primär für die Kunstschaffenden ge-
+dacht und bildet ruhige und private Bereiche aus, die von Grün umschlungen sind.
+<br><br>
+Diese drei Gebäude werden durch das Podest, welches aus dem alten Schienennetz entstammt, zu einem
+Ensemble. Die unterschiedlichen Außenräume, die so entstehen, können je nach Bedarf und Orientierung un-
+terschiedlich genutzt werden und bieten unterschiedliche Qualitäten. Ob Vorplatz, Ausstellungsraum, Werk-
+bereich, Bühne, Klassenraum, Treffpunkt, der Vorstellung sind keine Grenzen gesetzt.
+
             </p> 
         </div>
     </div>
