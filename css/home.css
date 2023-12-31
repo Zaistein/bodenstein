@@ -2,14 +2,22 @@
     Home Button
 */
 
-/* media query for mobile devices */
+/* media query for mobile devices 
 @media screen and (max-width: 1500px)
 {
     .Home
     {
       font-size: 3rem;
     }
-  }
+  }*/
+
+  @media  (pointer:none), (pointer:coarse)
+{
+    .Home
+    {
+      font-size: 3rem;
+    }
+}
 
 .Home{
     
