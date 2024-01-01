@@ -84,8 +84,6 @@ if (objToRender === "test") {
 }
 
 
-
-
 //Render the scene
 function animate() {
   requestAnimationFrame(animate);
@@ -98,7 +96,9 @@ function animate() {
     //object.rotation.x = -4 + mouseY * 8 / window.innerHeight;
   }
 
-  //object.rotation.y += 0.004;
+  setTimeout(() => {    object.rotation.x -= 0.001;
+  }, 4000);
+
   
 
   renderer.render(scene, camera);
