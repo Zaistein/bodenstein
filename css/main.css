@@ -42,9 +42,11 @@ body{
     }
   }*/
 
+
+
   @media  (pointer:none), (pointer:coarse)
 {
-    .Home
+    .main
     {
       font-size: 3rem;
     }
@@ -59,7 +61,7 @@ body{
 .main{
     position: absolute;
     margin: auto;
-    margin-top: 63vh;
+    margin-top: 53vh;
     width: 100%;
 }
 
@@ -126,6 +128,10 @@ body{
 /* 
     THREE.js
 */
+
+#container3D:hover{
+    cursor: pointer;
+}
 
 main{
 

@@ -1,5 +1,5 @@
 //Import the THREE.js library
-import * as THREE from "https://cdn.skypack.dev/three@0.129.0/build/three.module.js";
+import * as THREE from "https://cdn.skypack.dev/three@0.129.0/build/three.module.js"; 
 // To allow for the camera to move around the scene
 import { OrbitControls } from "https://cdn.skypack.dev/three@0.129.0/examples/jsm/controls/OrbitControls.js";
 // To allow for importing the .gltf file
@@ -36,7 +36,11 @@ loader.load(
     //If the file is loaded, add it to the scene
     object = gltf.scene;
     scene.add(object);
+
   },
+
+  
+  
   function (xhr) {
     //While it is loading, log the progress
     console.log((xhr.loaded / xhr.total * 100) + '% loaded');
@@ -46,6 +50,7 @@ loader.load(
     console.error(error);
   }
 );
+
 
 
 //Instantiate a new renderer and set its size
@@ -72,22 +77,30 @@ scene.add(ambientLight);
 
 //This adds controls to the camera, so we can rotate / zoom it with the mouse
 if (objToRender === "test") {
+  
     controls = new OrbitControls(camera, renderer.domElement);
+
     
 }
+
+
 
 
 //Render the scene
 function animate() {
   requestAnimationFrame(animate);
   //Here we could add some code to update the scene, adding some automatic movement
-
+  
   //Move by mouse movement
   if (object && objToRender === "test") {
     //I've played with the constants here until it looked good 
     //object.rotation.y = -4 + mouseX / window.innerWidth * 8;
     //object.rotation.x = -4 + mouseY * 8 / window.innerHeight;
   }
+
+  //object.rotation.y += 0.004;
+  
+
   renderer.render(scene, camera);
 }
 
@@ -106,5 +119,7 @@ document.onmousemove = (e) => {
 
 
 
+
 //Start the 3D rendering
 animate();
+
