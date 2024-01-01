@@ -21,34 +21,13 @@
 			"name":"Icon.001"
 		}
 	],
-	"animations":[
-		{
-			"channels":[
-				{
-					"sampler":0,
-					"target":{
-						"node":0,
-						"path":"rotation"
-					}
-				}
-			],
-			"name":"Icon.001",
-			"samplers":[
-				{
-					"input":4,
-					"interpolation":"LINEAR",
-					"output":5
-				}
-			]
-		}
-	],
 	"materials":[
 		{
 			"doubleSided":true,
 			"extensions":{
 				"KHR_materials_unlit":{}
 			},
-			"name":"Material",
+			"name":"Black",
 			"pbrMetallicRoughness":{
 				"baseColorFactor":[
 					0,
@@ -56,6 +35,20 @@
 					0,
 					1
 				],
+				"metallicFactor":0,
+				"roughnessFactor":0.9
+			}
+		},
+		{
+			"doubleSided":true,
+			"extensions":{
+				"KHR_materials_unlit":{}
+			},
+			"name":"Material",
+			"pbrMetallicRoughness":{
+				"baseColorTexture":{
+					"index":0
+				},
 				"metallicFactor":0,
 				"roughnessFactor":0.9
 			}
@@ -73,15 +66,37 @@
 					},
 					"indices":3,
 					"material":0
+				},
+				{
+					"attributes":{
+						"POSITION":4,
+						"NORMAL":5,
+						"TEXCOORD_0":6
+					},
+					"indices":7,
+					"material":1
 				}
 			]
+		}
+	],
+	"textures":[
+		{
+			"sampler":0,
+			"source":0
+		}
+	],
+	"images":[
+		{
+			"mimeType":"image/png",
+			"name":"Icon",
+			"uri":"textures/Icon.png"
 		}
 	],
 	"accessors":[
 		{
 			"bufferView":0,
 			"componentType":5126,
-			"count":72,
+			"count":12,
 			"max":[
 				9.82949161529541,
 				9.828755378723145,
@@ -90,86 +105,122 @@
 			"min":[
 				-9.832170486450195,
 				-9.828753471374512,
-				-0.41445791721343994
+				0
 			],
 			"type":"VEC3"
 		},
 		{
 			"bufferView":1,
 			"componentType":5126,
-			"count":72,
+			"count":12,
 			"type":"VEC3"
 		},
 		{
 			"bufferView":2,
 			"componentType":5126,
-			"count":72,
+			"count":12,
 			"type":"VEC2"
 		},
 		{
 			"bufferView":3,
 			"componentType":5123,
-			"count":108,
+			"count":18,
 			"type":"SCALAR"
 		},
 		{
 			"bufferView":4,
 			"componentType":5126,
-			"count":120,
+			"count":60,
 			"max":[
-				4.958333333333333
-			],
-			"min":[
+				9.82949161529541,
+				9.828755378723145,
 				0
 			],
-			"type":"SCALAR"
+			"min":[
+				-9.832170486450195,
+				-9.828753471374512,
+				-11.555482864379883
+			],
+			"type":"VEC3"
 		},
 		{
 			"bufferView":5,
 			"componentType":5126,
-			"count":120,
-			"type":"VEC4"
+			"count":60,
+			"type":"VEC3"
+		},
+		{
+			"bufferView":6,
+			"componentType":5126,
+			"count":60,
+			"type":"VEC2"
+		},
+		{
+			"bufferView":7,
+			"componentType":5123,
+			"count":90,
+			"type":"SCALAR"
 		}
 	],
 	"bufferViews":[
 		{
 			"buffer":0,
-			"byteLength":864,
+			"byteLength":144,
 			"byteOffset":0,
 			"target":34962
 		},
 		{
 			"buffer":0,
-			"byteLength":864,
-			"byteOffset":864,
+			"byteLength":144,
+			"byteOffset":144,
 			"target":34962
 		},
 		{
 			"buffer":0,
-			"byteLength":576,
-			"byteOffset":1728,
+			"byteLength":96,
+			"byteOffset":288,
 			"target":34962
 		},
 		{
 			"buffer":0,
-			"byteLength":216,
-			"byteOffset":2304,
+			"byteLength":36,
+			"byteOffset":384,
 			"target":34963
 		},
 		{
 			"buffer":0,
-			"byteLength":480,
-			"byteOffset":2520
+			"byteLength":720,
+			"byteOffset":420,
+			"target":34962
 		},
 		{
 			"buffer":0,
-			"byteLength":1920,
-			"byteOffset":3000
+			"byteLength":720,
+			"byteOffset":1140,
+			"target":34962
+		},
+		{
+			"buffer":0,
+			"byteLength":480,
+			"byteOffset":1860,
+			"target":34962
+		},
+		{
+			"buffer":0,
+			"byteLength":180,
+			"byteOffset":2340,
+			"target":34963
+		}
+	],
+	"samplers":[
+		{
+			"magFilter":9729,
+			"minFilter":9987
 		}
 	],
 	"buffers":[
 		{
-			"byteLength":4920,
+			"byteLength":2520,
 			"uri":"scene.bin"
 		}
 	]
