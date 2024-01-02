@@ -96,8 +96,13 @@ function animate() {
     //object.rotation.x = -4 + mouseY * 8 / window.innerHeight;
   }
 
-  setTimeout(() => {    object.rotation.x -= 0.001;
+  setTimeout(() => {    
+    object.rotation.x -= 0.001;
   }, 4000);
+
+  setTimeout(() => {    
+    object.rotation.y += 0.0015;
+  }, 7000);
 
   
 
