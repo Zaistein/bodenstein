@@ -73,18 +73,24 @@ li{
     position: relative;
     display: flex;
     top: 50%;
-    color: rgb(0, 0, 0);
     z-index: 2;
     cursor: pointer;
+    filter: invert(1);
+    mix-blend-mode: difference;
 }
 
-.arrows:hover{
+.arrow-left:hover{
+    color: rgba(0, 0, 0, 0.2);
+}
+
+.arrow-right:hover{
     color: rgba(0, 0, 0, 0.2);
 }
 
 .arrow-left{
     position: absolute;
     left: 5vw;
+    
 }
 
 .arrow-right{
