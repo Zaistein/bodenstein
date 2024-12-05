@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport:" content="width=device-width, initial-scale=1.0">
+    <title>bodenstein</title>
+    <link rel="icon" href="/img/favicon/favicon.ico" type="image/icon">
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/projectpage.css">
+    <link rel="stylesheet" href="/css/home.css">
+    <script src="/js/switchImg.js" defer></script>
+    <script src="/js/fullscreen.js" defer></script>
+
+
+
+</head>
+
+
+<body>
+
+
+
+
+    <!-- Image Gallery -->
+    <div class="content">
+        <div class="project">  
+            <div class="small-img">
+                <img class="picto" src="/Project 7/1.jpg" alt="" onclick="switchImg(this)">
+
+
+
+
+            </div>
+            <div class="img-container">
+                <img class="active" id="imageBox" src="/Project 7/1.jpg" ng-if="option=='image'" onclick="FullView(this.src)"> 
+                <video class="active" id="vidBox" controls onclick="FullView(this.src)"> <source src="" type="video/mp4" ng-if="option=='video'"></video>
+            </div> 
+        </div>
+
+  
+
+        <!-- Title -->
+        <div class="text">
+            <h1 class="title">
+                Stadtebauliches Projekt
+            </h1>
+                    
+            <!-- Explanation Text -->
+            <p class="body">
+                Quartier am Berlin Ostbahnhof
+                <br><br>
+                <p style="font-style:italic;font-size: small;">
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                    In Zusammenarbeit mit Lara Sodomann, Daniel Lux, Mina Su
+                </p>
+            </p> 
+        </div>
+    </div>
+    
+
+    <!-- Fullscreen --> 
+
+    <div id="FullImageView">
+        <img id="FullImage">
+        <span id="CloseButton" onclick="CloseFullView()"></span>
+    </div>
+ 
+
+
+    <!-- Mail Copy Button --> 
+
+    <div class="Home">
+        <button class="Home">
+            <a href="/html/projects.html" class="hidden">&#9750; </a>
+            <a href="/html/projects.html" class="shown">&#9751; </a>
+        </button>
+    </div>
+    
+</body>
+</html>

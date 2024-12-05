@@ -1,0 +1,145 @@
+/* 
+    Disable Selection
+*/
+
+body {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+/* 
+    Load all images on page load to fix visual bugs.
+*/
+
+body:after {
+    position: absolute;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    z-index: -1;
+    content: url() url();
+}
+
+/* 
+    Background Color of page.
+*/
+body{
+    background-color: #e7e7e7;
+
+}
+
+
+/* media query for mobile devices 
+@media screen and (max-width: 1500px)
+{
+    .main 
+    {
+      font-size: 3rem;
+    }
+  }*/
+
+
+
+  @media  (pointer:none), (pointer:coarse)
+{
+    .main
+    {
+      font-size: 3rem;
+    }
+}
+
+
+
+/* 
+    Main container
+*/
+
+.main{
+    position: absolute;
+    margin: auto;
+    margin-top: 53vh;
+    width: 100%;
+}
+
+/* 
+    Links
+*/
+
+.Links{
+
+    display: flex;
+    justify-content: center;
+    margin: 6vmin auto 0;
+    z-index: 2;
+}
+
+
+
+.Hover_Link{
+    margin: 0 0.4vmin;
+    z-index: 2;
+
+}
+.Hover_Link:hover{
+    
+    cursor: pointer;
+    text-decoration: underline;
+
+}
+
+
+/* 
+    Mail Link
+*/
+
+
+
+.copy-link{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1vmin;
+    z-index: 2;
+
+
+}
+
+
+.copy-link-input{
+    display: none;
+    z-index: 2;
+}
+.copy-link-button{
+    z-index: 2;
+
+}
+
+.copy-link-button:hover{
+
+    cursor: pointer;
+    z-index: 2;
+}
+
+/* 
+    THREE.js
+*/
+
+#container3D:hover{
+    cursor: pointer;
+}
+
+main{
+
+    position: absolute;
+    z-index: 0;
+    height: 100vh;
+    width: 100vw;
+    margin: auto;
+    transform: translateY(-6vh);
+
+}

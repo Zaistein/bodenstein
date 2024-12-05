@@ -1,0 +1,75 @@
+/* 
+    Home Button
+*/
+
+/* media query for mobile devices 
+@media screen and (max-width: 1500px)
+{
+    .Home
+    {
+      font-size: 3rem;
+    }
+  }*/
+
+  @media  (pointer:none), (pointer:coarse)
+{
+    .Home
+    {
+      font-size: 3rem;
+    }
+}
+
+.Home{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    margin: 5vh 50%;
+    bottom: 0;
+    z-index: 5;
+
+
+}
+
+.Home .shown {
+    opacity: 0;
+    transition-duration: .3s;
+}
+.Home:hover .hidden {
+    opacity: 0;
+    transition-duration: .3s;
+    cursor: pointer;
+
+}
+
+.Home:hover .shown {
+    opacity: 1;
+    transition-duration: .3s;
+    cursor: pointer;
+}
+
+.shown,
+.hidden {
+    position: absolute;
+}
+
+/* 
+    Background Color of page.
+*/
+body{
+    background-color: #e7e7e7;
+}
+
+/* 
+    Disable Selection
+*/
+
+body {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
