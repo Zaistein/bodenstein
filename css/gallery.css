@@ -15,7 +15,6 @@
     min-width: 400px;
     aspect-ratio: 1/1;
     transition: 500ms ease-in-out;
-    aspect-ratio: 1/1;
     object-fit:cover;
     padding: 4vmin;
 
@@ -77,4 +76,24 @@
 
 
 
+}
+
+.Sort{
+
+    display: flex;
+    justify-content: center;
+    margin: 6vmin auto auto;
+    z-index: 2;
+    
+}
+
+.Sort button{
+
+    margin: 0 1vmin;
+
+}
+
+.Japan {
+
+    display: none;
 }
